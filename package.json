@@ -5,7 +5,7 @@
   "homepage": "http://konstantinkrumin.github.io/svelte-feedback-app",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d public/build",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
