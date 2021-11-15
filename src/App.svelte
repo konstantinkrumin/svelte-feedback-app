@@ -3,12 +3,27 @@
 	let lastName = 'Krumin';
 	let color = 'blue';
 	let showText = false;
+	let users = [
+		{
+			id: '1',
+			name: 'John'
+		},
+		{
+			id: '2',
+			name: 'Sarah'
+		},
+		{
+			id: '3',
+			name: 'Bob'
+		}
+	];
 
 	$: name = firstName + ' ' + lastName;
 
 	const toggle = () => {
 		color = color === 'blue' ? 'orange' : 'blue';
 		showText = !showText;
+		users = [...users, { id: '4', name: 'Jen' }]
 	}
 </script>
 
@@ -21,6 +36,10 @@
 	{/if}
 
 	<button on:click={toggle}>Click</button>
+
+	{#each users as user (user.id)}
+		<h3>{user.id}: {user.name}</h3>
+	{/each}
 </main>
 
 <style>
