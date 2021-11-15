@@ -35,6 +35,7 @@
         text-align: center;
         font-size: 19px;
     }
+    
     .close {
         position: absolute;
         top: 10px;

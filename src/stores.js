@@ -4,16 +4,16 @@ export const FeedbackStore = writable([
   {
     id: 1,
     rating: 10,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    text: "Amazing I'm absolutely in love with the product!",
   },
   {
     id: 2,
     rating: 9,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    text: 'Great quality for a reasonable price. Love it!',
   },
   {
     id: 3,
-    rating: 8,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    rating: 7,
+    text: 'I love the selection of products and quality, but delivery takes quite a long time',
   },
 ]);

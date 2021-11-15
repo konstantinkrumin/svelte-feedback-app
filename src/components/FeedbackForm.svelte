@@ -36,6 +36,7 @@
                 return [newFeedback, ...currentFeedBack]
             })
 
+            rating = 10
             text = ''
         }
     }
