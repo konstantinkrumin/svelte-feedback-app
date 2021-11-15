@@ -1,5 +1,5 @@
 <script>
-	import FeedbackList from './components/FeedbackList.svelte';
+	import FeedbackList from './components/FeedbackList.svelte'
 
 	let feedback = [
 		{
@@ -18,10 +18,15 @@
 			text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
 		},
 	]
+
+	const deleteFeedback = (e) => {
+		const itemId = e.detail
+		feedback = feedback.filter((item) => item.id !== itemId)
+	}
 </script>
 
 <main class="container">
-	<FeedbackList {feedback} />
+	<FeedbackList {feedback} on:delete-feedback={deleteFeedback} />
 </main>
 
 <style>
