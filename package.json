@@ -2,10 +2,8 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "private": false,
-  "homepage": "http://konstantinkrumin.github.io/svelte-feedback-app",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d public",
+    "deploy": "node ./gh-pages.js",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
