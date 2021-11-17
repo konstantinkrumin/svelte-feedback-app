@@ -2,6 +2,8 @@
 
 A small user feedback UI built with Svelte.
 
+Stack: **Javascript**, **Svelte**, **CSS**
+
 [Check It Out Here](https://svelte-feedback-app-costa.vercel.app/)
 
 Alternatively you can start it locally by running the following:
